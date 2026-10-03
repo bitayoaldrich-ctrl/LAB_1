@@ -8,7 +8,7 @@ export default function App() {
   const [waitingForOperand, setWaitingForOperand] = useState(false);
   const [history, setHistory] = useState([]);
 
-  // Kusa nitong i-di-display ang Tailwind CSS para lumabas ang kulay at hugis
+ 
   useEffect(() => {
     if (!document.getElementById('tailwind-cdn')) {
       const script = document.createElement('script');
@@ -248,7 +248,7 @@ export default function App() {
   );
 }
 
-// Automatic Render Mount para sa Online Runners / OneCompiler
+ OneCompiler
 const rootElement = document.getElementById('root') || document.body;
 const root = ReactDOM.createRoot(rootElement);
 root.render(<App />);
